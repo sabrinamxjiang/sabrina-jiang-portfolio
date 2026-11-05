@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sabrina Jiang — supply chain, demand planning, inventory, and analytics portfolio." />
+  <title>Sabrina Jiang | Supply Chain Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=52" />
+
+<style>
+/* v18 refined closing statement */
+#contact .closing-title,
+.contact .closing-title,
+.closing-title,
+#contact h2,
+.contact h2 {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(1.55rem, 2.4vw, 2.45rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+#contact p,
+.contact p {
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+</style>
+
+
+<style>
+/* v20: high-resolution satin, with Education retaining UW campus background */
+:root { --black-satin: url("assets/black-satin-hq.jpg"); }
+
+/* Dark sections only */
+header, nav, .site-header,
+#about, .about,
+#beyond-work, .beyond-work {
+  background-image:
+    linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,.18)),
+    var(--black-satin) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Education is intentionally NOT satin */
+#education, .education {
+  position: relative;
+  background-image:
+    linear-gradient(rgba(255,255,255,.71), rgba(255,255,255,.71)),
+    url("assets/uw-campus.jpg") !important;
+  background-size: cover !important;
+  background-position: center 48% !important;
+  background-repeat: no-repeat !important;
+  color: #1d1a17 !important;
+}
+#education::before, .education::before {
+  content: none !important;
+}
+#education h1, #education h2, #education h3,
+#education .section-title, .education h1, .education h2,
+.education h3, .education .section-title {
+  color: #171513 !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="name-link" href="#top">Sabrina Jiang</a>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#life">Beyond Work</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="top" class="hero hero-index container">
+      <div class="hero-text reveal">
+        <h1>Sabrina Jiang's Portfolio</h1>
+        <p class="hero-tagline">Supply chain leadership isn’t just about managing inventory—it’s about choreographing the flow between analytics, alignment, and execution.</p>
+        <div class="text-links">
+          <a href="https://www.linkedin.com/in/meixianjiang" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="mailto:sabrina.mx.jiang@gmail.com">sabrina.mx.jiang@gmail.com ↗</a>
+        </div>
+      </div>
+      <div class="hero-mosaic reveal" role="navigation" aria-label="Explore portfolio sections">
+        <a class="hero-tile tile-about" href="#about">
+          <img src="assets/cover-about-space-needle.jpg" alt="Seattle Space Needle with Mount Rainier in the distance" />
+          <span>About</span>
+        </a>
+        <a class="hero-tile tile-experience" href="#experience">
+          <img src="assets/cover-experience.png" alt="Laptop, planning notes, reports and tablet arranged on a work desk" />
+          <span>Experience</span>
+        </a>
+        <a class="hero-tile tile-education" href="#education">
+          <img src="assets/cover-education-uw-cherry-blossoms.jpg" alt="University of Washington campus framed by cherry blossoms" />
+          <span>Education</span>
+        </a>
+        <a class="hero-tile tile-projects" href="#projects">
+          <img src="assets/cover-projects-makeup.jpg" alt="Makeup, fragrance and brushes arranged on ivory fabric" />
+          <span>Projects</span>
+        </a>
+        <a class="hero-tile tile-life" href="#life">
+          <img src="assets/cover-beyond-work-sunny-puppy.png" alt="Sunny as a golden retriever puppy looking at the camera" />
+          <span>Beyond Work</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="container section reveal">
+      <div class="section-title"><span>01</span><h2>About Me</h2></div>
+      <div class="about-editorial">
+        <figure class="about-portrait">
+          <img src="assets/portrait.jpg" alt="Portrait of Sabrina Jiang" />
+        </figure>
+        <div class="prose large about-copy">
+          <p>With nearly three years of experience across beauty and footwear, I’m a supply chain professional currently pursuing a Master of Science in Supply Chain Management at the University of Washington. Curiosity and persistence also shape who I am beyond work: over five years, I went from having no dance experience to performing on stage.</p>
+        </div>
+      </div>
+      <div class="facts about-facts">
+        <div><span>3%</span><p>Forecast accuracy improvement at Shiseido</p></div>
+        <div><span>300+</span><p>Keds & Converse SKUs managed at Pao Yuan</p></div>
+        <div><span>30+</span><p>Planning SOPs standardized at Shiseido</p></div>
+        <div><span>$12.5M+</span><p>Products supported for on-time delivery at Shiseido</p></div>
+      </div>
+    </section>
+
+    <section id="experience" class="container section reveal">
+      <div class="section-title"><span>02</span><h2>Experience</h2></div>
+
+      <article class="career-feature ">
+        <div class="career-visual">
+          <div class="career-carousel shiseido-carousel" data-carousel data-kind="image" aria-label="Shiseido experience photo carousel">
+            <div class="carousel-viewport">
+              <figure class="career-photo carousel-slide is-active" data-slide>
+                <img src="assets/shiseido-work.jpg" alt="IPSA product photograph" loading="lazy" />
+              </figure>
+              <figure class="career-photo carousel-slide" data-slide aria-hidden="true">
+                <img src="assets/shiseido-team-building.jpeg" alt="Sabrina with the Shiseido Supply Chain team at a bowling event" loading="lazy" />
+              </figure>
+            </div>
+            <div class="career-carousel-captions" aria-live="polite">
+              <p class="career-carousel-caption is-active" data-carousel-caption="0"><strong>IPSA Product Portfolio</strong><span>Supported demand and supply planning for IPSA products at Shiseido.</span></p>
+              <p class="career-carousel-caption" data-carousel-caption="1" aria-hidden="true"><strong>Team Building</strong><span>Connected with colleagues beyond day-to-day planning at a Supply Chain team-building bowling event.</span></p>
+            </div>
+            <div class="carousel-dots" role="group" aria-label="Choose Shiseido experience photo">
+              <button class="carousel-dot is-active" type="button" data-carousel-dot="0" aria-label="Show IPSA product photo" aria-current="true"></button>
+              <button class="carousel-dot" type="button" data-carousel-dot="1" aria-label="Show Supply Chain team-building photo" aria-current="false"></button>
+            </div>
+          </div>
+        </div>
+        <div class="career-story">
+          <div class="career-brand"><img src="assets/shiseido-logo-transparent.png" alt="Shiseido logo" loading="lazy" /></div>
+          <p class="career-kicker">Feb 2025 — May 2026 · Taiwan</p>
+          <h3>Demand & Supply Planner</h3>
+          <p class="career-company"><span class="company-name">Shiseido</span><span class="company-descriptor">No. 1 cosmetics manufacturer in Japan and Asia</span></p>
+          <div class="career-impact"><strong>+3%</strong><span>Forecast accuracy improvement</span></div>
+          <p>30+ standardized planning guidelines, supporting onboarding and knowledge transfer.</p><p>Supported delivery of products valued at US$12.5M+ through supplier and warehouse coordination.</p>
+        </div>
+      </article>
+      <article class="career-feature reverse">
+        <div class="career-visual">
+          <div class="career-carousel paoyuan-carousel" data-carousel data-kind="image" aria-label="Pao Yuan experience photo carousel">
+            <div class="carousel-viewport">
+              <figure class="career-photo carousel-slide is-active" data-slide>
+                <img src="assets/paoyuan-media.png" alt="Keds and Converse footwear" loading="lazy" />
+              </figure>
+              <figure class="career-photo carousel-slide" data-slide aria-hidden="true">
+                <img src="assets/paoyuan-converse-meeting.jpeg" alt="Sabrina presenting a Converse seasonal collection at a store manager meeting" loading="lazy" />
+              </figure>
+            </div>
+            <div class="career-carousel-captions" aria-live="polite">
+              <p class="career-carousel-caption is-active" data-carousel-caption="0"><strong>Keds &amp; Converse Portfolio</strong><span>Supporting Keds and Converse collections from product planning through retail execution.</span></p>
+              <p class="career-carousel-caption" data-carousel-caption="1" aria-hidden="true"><strong>Converse Store Manager Meeting</strong><span>Presented the upcoming Converse seasonal collection and new product offerings at a store manager meeting.</span></p>
+            </div>
+            <div class="carousel-dots" role="group" aria-label="Choose Pao Yuan experience photo">
+              <button class="carousel-dot is-active" type="button" data-carousel-dot="0" aria-label="Show Keds and Converse footwear photo" aria-current="true"></button>
+              <button class="carousel-dot" type="button" data-carousel-dot="1" aria-label="Show Converse store manager meeting photo" aria-current="false"></button>
+            </div>
+          </div>
+        </div>
+        <div class="career-story">
+          <div class="career-brand"><img src="assets/yysports-logo-transparent.png" alt="YYSPORTS logo" loading="lazy" /></div>
+          <p class="career-kicker">Jul 2023 — Nov 2024 · Taiwan</p>
+          <h3>Merchandiser</h3>
+          <p class="career-company"><span class="company-name">Pao Yuan Enterprises</span><span class="company-descriptor">Part of Pou Chen Group, the world's largest branded athletic and casual footwear manufacturer</span></p>
+          <div class="career-impact"><strong>+5%</strong><span>Year-over-year sell-through improvement</span></div>
+          <p>Managed 300+ Keds and Converse SKUs across 15 stores.</p><p>Coordinated 30+ promotional events to help reduce excess inventory.</p>
+        </div>
+      </article>
+      <article class="career-feature ">
+        <div class="career-visual">
+          <figure class="career-photo"><img src="assets/edelman-user.jpeg" alt="Sabrina at Edelman" loading="lazy" /></figure>
+        </div>
+        <div class="career-story">
+          <div class="career-brand"><img src="assets/edelman-logo-transparent.png" alt="Edelman logo" loading="lazy" /></div>
+          <p class="career-kicker">Dec 2022 — Jun 2023 · Taiwan</p>
+          <h3>Brand & Public Relations Intern</h3><p class="career-company"><span class="company-name">Edelman</span><span class="company-descriptor">The world's largest public relations firm</span></p>
+          <div class="career-impact"><strong>PR</strong><span>Communications & insights</span></div>
+          <p>Localized press releases for leading Canadian athletic apparel and luxury outerwear brands.</p><p>Delivered PR insights through competitor and industry analysis for a leading global quick-service restaurant brand.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="projects" class="container section reveal">
+      <div class="section-title"><span>03</span><h2>Projects</h2></div>
+
+      <article class="project forecast-project">
+        <div class="project-heading">
+          <h3>1. Improved forecast accuracy by 3%</h3>
+        </div>
+        <img class="project-hero" src="assets/ipsa-forecast-project.jpg" alt="IPSA skincare products arranged on a bright reflective surface" />
+        <div class="project-grid">
+          <div class="project-problem"><h4>The Problem</h4><p>While working at Shiseido, I identified forecast gaps driven by changing business priorities and sales targets, which increased excess-inventory risk. A structured review process was needed to align Supply Chain, Brand, and Sales on corrective actions.</p></div>
+          <div class="project-action"><h4>What I Did</h4><ol><li>Established monthly reviews with Brand and Sales managers to assess business plans, sales targets, and forecast accuracy.</li><li>Analyzed major forecast variances, identified root causes, and discussed necessary forecast adjustments with stakeholders.</li><li>Aligned teams on corrective actions and documented key decisions, owners, and follow-up items.</li></ol></div>
+          <div class="project-result"><h4>Result</h4><p>Improved forecast accuracy by 3% while strengthening cross-functional alignment and reducing excess-inventory risk.</p></div>
+        </div>
+      </article>
+
+      <article class="project expedited-project">
+        <div class="project-heading">
+          <h3>2. Reduced delivery lead time from three weeks to one week</h3>
+        </div>
+        <img class="project-hero" src="assets/expedited-shipment-project.png" alt="Organized freight shipment staged at a warehouse loading dock" />
+        <div class="project-grid">
+          <div class="project-problem"><h4>The Problem</h4><p>During my time at Shiseido, a key wholesale customer requested delivery within one week rather than the standard three weeks, despite a multi-step process and limited warehouse capacity.</p></div>
+          <div class="project-action"><h4>What I Did</h4><ol><li>Confirmed the vessel arrival, container unloading, trucking, and warehouse receiving schedules in advance.</li><li>Coordinated with Logistics and the warehouse to prioritize receiving and labeling, adjusting other product schedules when needed.</li><li>Aligned QA inspection timing and closely monitored each step to keep execution on schedule.</li></ol></div>
+          <div class="project-result"><h4>Result</h4><p>Successfully delivered a US$300K order for a key wholesale customer within one week, cutting the standard lead time by two weeks despite limited capacity.</p></div>
+        </div>
+      </article>
+
+      <article class="project sop-project">
+        <div class="project-heading">
+          <h3>3. Standardized 30+ planning SOPs from scratch</h3>
+        </div>
+        <img class="project-hero" src="assets/sop-presentation-meeting-v2.png" alt="Sabrina presenting planning SOP standardization to colleagues in a meeting room" />
+        <div class="project-grid">
+          <div class="project-problem"><h4>The Problem</h4><p>When I joined Shiseido, onboarding relied heavily on verbal knowledge transfer, with no centralized training materials or documented workflows.</p></div>
+          <div class="project-action"><h4>What I Did</h4><ol><li>Collaborated with the project lead to identify and prioritize 30+ recurring planning processes.</li><li>Documented workflows, checks, exceptions, and key considerations.</li><li>Built a shared SOP library for onboarding and daily reference.</li></ol></div>
+          <div class="project-result"><h4>Result</h4><p>Created 30+ standardized guidelines, supported 2 new planners, and equipped 15+ team members with a shared reference.</p></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="education" class="container section reveal">
+      <div class="section-title"><span>04</span><h2>Education</h2></div>
+      <div class="education-showcase">
+        <article class="education-school">
+          <img src="assets/uw-foster-new.webp" alt="UW Foster logo" />
+          <div class="education-copy">
+            <h3>University of Washington</h3>
+            <p>Foster School of Business</p>
+            <p>Master of Science, Supply Chain Management</p>
+            <p class="muted">Seattle, Washington · 2026 — 2027</p>
+          </div>
+        </article>
+        <div class="education-divider" aria-hidden="true"></div>
+        <article class="education-school">
+          <img src="assets/ntu-new.webp" alt="National Taiwan University logo" />
+          <div class="education-copy">
+            <h3>National Taiwan University</h3>
+            <p>Bachelor’s in Foreign Languages and Literatures</p>
+            <p class="muted">Taipei, Taiwan · 2019 — 2023</p>
+            <p class="education-ranking">Ranked #54 in the QS World University Rankings 2027</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="life" class="container section reveal">
+      <div class="section-title"><span>05</span><h2>Beyond Work</h2></div>
+      <div class="life-grid">
+        <div class="media-carousel dance-carousel" data-carousel data-kind="mixed" data-auto-sequence data-photo-delay="3000" aria-label="Dance performance photo and video carousel">
+          <div class="carousel-viewport">
+            <figure class="carousel-slide is-active" data-slide>
+              <img src="assets/dance.jpg" alt="Sabrina performing K-pop choreography on stage" />
+            </figure>
+            <div class="carousel-slide" data-slide aria-hidden="true">
+              <video class="dance-video" muted playsinline controls preload="metadata" aria-label="Dance performance video 1">
+                <source src="assets/dance-video-01.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+            </div>
+            <figure class="carousel-slide" data-slide aria-hidden="true">
+              <img src="assets/dance-performance-portrait.jpg" alt="Sabrina smiling during a dance performance" loading="lazy" />
+            </figure>
+            <div class="carousel-slide" data-slide aria-hidden="true">
+              <video class="dance-video" muted playsinline controls preload="metadata" aria-label="Dance performance video 2">
+                <source src="assets/dance-video-02.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+            </div>
+          </div>
+          <div class="carousel-dots" role="group" aria-label="Choose dance photo or video">
+            <button class="carousel-dot is-active" type="button" data-carousel-dot="0" aria-label="Show dance photo 1" aria-current="true"></button>
+            <button class="carousel-dot" type="button" data-carousel-dot="1" aria-label="Play dance video 1" aria-current="false"></button>
+            <button class="carousel-dot" type="button" data-carousel-dot="2" aria-label="Show dance photo 2" aria-current="false"></button>
+            <button class="carousel-dot" type="button" data-carousel-dot="3" aria-label="Play dance video 2" aria-current="false"></button>
+          </div>
+        </div>
+        <div class="prose large life-copy">
+          <h3 class="life-hashtag">Dance Journey</h3>
+          <p>Dance is where I learned to be comfortable with preparation, timing, and change. I’ve practiced K-pop choreography and Hip-Hop for more than five years and performed 20+ choreographies on stage.</p>
+          <p>It reminds me that strong execution rarely comes from one person—it comes from listening, aligning, rehearsing, and adapting together.</p>
+        </div>
+      </div>
+      <div class="sunny-feature">
+        <div class="prose large sunny-copy">
+          <h3>Life with Four Paws 🐾</h3>
+          <p>I’ve always had a soft spot for dogs! Sunny, a playful 1-year-old golden retriever, has brought even more joy into my life. I created an Instagram account for her, where I brainstorm content ideas, edit videos, and share her daily adventures.</p>
+          <p>Running her account allows me to explore my creativity, experiment with storytelling, and turn everyday moments into engaging content.</p>
+          <a class="sunny-profile-link" href="https://www.instagram.com/sunny.golden07/" target="_blank" rel="noreferrer">Visit @sunny.golden07 ↗</a>
+        </div>
+        <div class="sunny-video-shell">
+          <div class="media-carousel sunny-video-carousel" data-carousel data-kind="video" aria-label="Sunny video carousel">
+            <div class="carousel-viewport">
+              <div class="carousel-slide is-active" data-slide>
+                <video class="sunny-video" autoplay muted loop playsinline controls preload="metadata" aria-label="Sunny video 1">
+                  <source src="assets/sunny-reel.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                </video>
+              </div>
+              <div class="carousel-slide" data-slide aria-hidden="true">
+                <video class="sunny-video" muted loop playsinline controls preload="metadata" aria-label="Sunny video 2">
+                  <source src="assets/sunny-reel-02.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                </video>
+              </div>
+            </div>
+            <div class="carousel-dots" role="group" aria-label="Choose Sunny video">
+              <button class="carousel-dot is-active" type="button" data-carousel-dot="0" aria-label="Play Sunny video 1" aria-current="true"></button>
+              <button class="carousel-dot" type="button" data-carousel-dot="1" aria-label="Play Sunny video 2" aria-current="false"></button>
+            </div>
+          </div>
+          <a class="sunny-reel-link" href="https://www.instagram.com/reel/Dd-WirQpFO6/" target="_blank" rel="noreferrer">View the original Reel on Instagram ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="closing-scene">
+      <section class="container contact contact-future-bg section reveal">
+        <div class="contact-copy">
+          <h2>Let’s plan what’s next</h2>
+          <p class="contact-note">Great things start with a conversation. Let's connect and explore what's possible.</p>
+          <div class="text-links large-links">
+            <a href="mailto:sabrina.mx.jiang@gmail.com">sabrina.mx.jiang@gmail.com ↗</a>
+            <a href="https://www.linkedin.com/in/meixianjiang" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+      </section>
+      <footer class="container footer"><span>© <span id="year"></span> Sabrina Jiang</span><a href="#top">Back to top ↑</a></footer>
+    </div>
+  </main>
+  <script src="script.js?v=53"></script>
+</body>
+</html>
