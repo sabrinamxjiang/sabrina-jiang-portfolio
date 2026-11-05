@@ -1,8 +1,12 @@
-# Codex 交接：Sabrina Jiang Portfolio v42
+# Codex 交接：Sabrina Jiang Portfolio v53
 
 ## 目前狀態
 
-這是英文 Supply Chain 單頁作品集，使用 Newsreader 標題、Manrope 內文、奶白布料與黑色絲緞交替背景。Education 使用 UW 校園照加 71% 白色蒙版。全部 56 個本機 assets 均保留；網站只在本機測試，尚未公開部署。
+這是英文 Supply Chain 單頁作品集，使用 Newsreader 標題、Manrope 內文、奶白布料與黑色絲緞交替背景。Education 使用 UW 校園照加 71% 白色蒙版。全部 59 個本機 assets 均保留；網站已透過 GitHub Pages 公開部署。
+
+- 正式網站：<https://sabrinamxjiang.github.io/sabrina-jiang-portfolio/>
+- Repository：<https://github.com/sabrinamxjiang/sabrina-jiang-portfolio>
+- 發布來源：`main` branch、`/(root)`
 
 入口檔案是 `index.html`；視覺規則主要在 `styles.css`，header 與 reveal 行為在 `script.js`。請先以本機 HTTP 預覽，不要只雙擊 HTML。
 

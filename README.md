@@ -1,8 +1,12 @@
 # Sabrina Jiang — Supply Chain Portfolio
 
-這是 Sabrina Jiang 的英文 Supply Chain 作品集，面向招聘者與專業合作對象。專案以 `Sabrina_Jiang_Work_Portfolio_Website_Minimal_v23.zip` 為基礎，目前工作版本為 v42，可直接在 Codex Desktop 開啟資料夾繼續修改。
+這是 Sabrina Jiang 的英文 Supply Chain 作品集，面向招聘者與專業合作對象。專案以 `Sabrina_Jiang_Work_Portfolio_Website_Minimal_v23.zip` 為基礎，目前工作版本為 v53，可直接在 Codex Desktop 開啟資料夾繼續修改。
 
-網站為單頁連續捲動，保留 `index.html`、全部素材、LinkedIn、Email、anchor links、手機版與淡入效果。v42 讓首頁 About 入口完整顯示 Space Needle，以同圖模糊背景補足左右空間；Pao Yuan Experience 新增 Converse Store Manager Meeting 輪播；Projects 改為 1–3 編號與成果導向標題。Shiseido、Pao Yuan、Dance、Sunny 四組輪播均支援圓點、手機左右滑動與桌面滑鼠拖曳。全站 Email 為 `sabrina.mx.jiang@gmail.com`。網站尚未公開部署。
+網站為單頁連續捲動，保留 `index.html`、全部素材、LinkedIn、Email、anchor links、手機版與淡入效果。首頁 About 入口完整顯示 Space Needle；Pao Yuan Experience 包含 Converse Store Manager Meeting 輪播；Projects 使用 1–3 編號與成果導向標題，第三案採用兩位同事參與簡報的會議照片。Shiseido、Pao Yuan、Dance、Sunny 四組輪播均支援圓點、手機左右滑動與桌面滑鼠拖曳。全站 Email 為 `sabrina.mx.jiang@gmail.com`。
+
+正式網站：<https://sabrinamxjiang.github.io/sabrina-jiang-portfolio/>
+
+GitHub repository：<https://github.com/sabrinamxjiang/sabrina-jiang-portfolio>
 
 ## 本機預覽
 
@@ -45,7 +49,7 @@ Sabrina_Jiang_Portfolio_Codex_Project/
 ├── styles.css                 # 排版、背景、響應式與歷史版本覆蓋
 ├── script.js                  # 年份、淡入、導覽列出現／隱藏
 ├── Open Portfolio.command     # Mac 雙擊啟動本機預覽
-├── assets/                    # 56 個保留素材，包含 Experience、Projects、Dance／Sunny MP4 與封面原圖
+├── assets/                    # 59 個保留素材，包含 Experience、Projects、Dance／Sunny MP4 與封面原圖
 ├── README.md                  # 使用、部署、架構與防回歸規則
 ├── HANDOFF.md                 # 目前狀態、限制與下一步
 ├── .nojekyll                  # GitHub Pages 純靜態發佈
@@ -80,20 +84,26 @@ HTML 順序為：fixed header → Hero → About (`#about`) → Experience (`#ex
 
 ## 部署 GitHub Pages
 
-目前沒有建立遠端 repository 或公開部署。
+正式網站已透過 GitHub Pages 公開部署：
 
-1. 建立或選擇 GitHub repository。
-2. 把本專案資料夾裡面的檔案放在 repository 根目錄，根目錄需直接包含 `index.html` 與 `assets/`。
-3. 提交並 push 到 `main`。
-4. Repository → Settings → Pages → Build and deployment → Source 選 `Deploy from a branch`。
-5. Branch 選 `main`，資料夾選 `/(root)`，按 Save。
-6. 部署完成後重新檢查圖片、影片、anchors、字體、背景交界和手機版。
+- 網站：<https://sabrinamxjiang.github.io/sabrina-jiang-portfolio/>
+- Repository：<https://github.com/sabrinamxjiang/sabrina-jiang-portfolio>
+- 發布來源：`main` branch、`/(root)`
+- HTTPS：已啟用
 
-保留相對路徑，不要將 `assets/...` 改成 `/assets/...`。檔名大小寫需一致，並保留根目錄 `.nojekyll`。本機影片約 17.7 MB；部署前可在不明顯降低畫質的前提下壓縮，以改善行動網路載入。
+後續更新流程：
+
+1. 在本機修改並預覽網站。
+2. 確認根目錄直接包含 `index.html` 與 `assets/`。
+3. `git add`、`git commit` 後 push 到 `main`。
+4. GitHub Pages 會由 `main` 的 `/(root)` 自動重新部署。
+5. 部署完成後重新檢查圖片、影片、anchors、字體、背景交界和手機版。
+
+保留相對路徑，不要將 `assets/...` 改成 `/assets/...`。檔名大小寫需一致，並保留根目錄 `.nojekyll`。Dance 影片目前最大約 42 MB；若要改善行動網路載入，可另行製作較小版本，但不要直接覆蓋原始影片。
 
 ## 防回歸規則
 
-1. 保留 `index.html`、現有功能和全部 56 個 assets；沒有明確確認前，不刪除未引用舊素材。
+1. 保留 `index.html`、現有功能和全部 59 個 assets；沒有明確確認前，不刪除未引用舊素材。
 2. 首頁必須維持五張照片在 1280×900、760×900、390×844 的第一個 viewport；header 不得重新佔用首頁頂端空間。
 3. 導覽文字背景保持透明；hover 只使用底線或亮度。
 4. About 不重複 Sabrina 姓名；不得恢復已刪除的 Hero 小標、Experience 摘要、`#1`、社團職稱或 `LET'S CONNECT`。
@@ -107,4 +117,4 @@ HTML 順序為：fixed header → Hero → About (`#about`) → Experience (`#ex
 
 ## 待確認與下一步
 
-請 Sabrina 以 iPhone Safari 視覺確認 v42 的完整 Space Needle、Pao Yuan 輪播與三個 Project 標題。之後可做 Android 測試、影片壓縮、無 JavaScript fallback，以及逐步整理歷史 CSS。完整狀態見 `HANDOFF.md`，檢查證據見 `docs/VERIFICATION.md`。
+請 Sabrina 以 iPhone Safari 實機確認正式網站的導覽、輪播、影片控制與載入速度。之後可做 Android 測試、影片壓縮、無 JavaScript fallback，以及逐步整理歷史 CSS。完整狀態見 `HANDOFF.md`，檢查證據見 `docs/VERIFICATION.md`。
