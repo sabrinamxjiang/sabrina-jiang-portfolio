@@ -6,12 +6,41 @@ document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 
 const siteHeader = document.querySelector('.site-header');
 const aboutSection = document.getElementById('about');
+const navToggle = document.querySelector('.nav-toggle');
+const primaryNavigation = document.getElementById('primary-navigation');
 let headerFrame;
+
+const setMobileMenu = (open) => {
+  if (!siteHeader || !navToggle) return;
+  siteHeader.classList.toggle('menu-open', open);
+  navToggle.setAttribute('aria-expanded', String(open));
+  navToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+};
+
+navToggle?.addEventListener('click', () => {
+  setMobileMenu(!siteHeader.classList.contains('menu-open'));
+});
+
+primaryNavigation?.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => setMobileMenu(false));
+});
+
+document.addEventListener('click', (event) => {
+  if (siteHeader?.classList.contains('menu-open') && !siteHeader.contains(event.target)) {
+    setMobileMenu(false);
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') setMobileMenu(false);
+});
 
 const updateHeader = () => {
   if (!siteHeader || !aboutSection) return;
   const showAt = aboutSection.offsetTop - siteHeader.offsetHeight - 24;
-  siteHeader.classList.toggle('is-visible', window.scrollY >= showAt);
+  const shouldShow = window.scrollY >= showAt;
+  siteHeader.classList.toggle('is-visible', shouldShow);
+  if (!shouldShow || window.innerWidth > 820) setMobileMenu(false);
 };
 
 const queueHeaderUpdate = () => {
